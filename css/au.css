@@ -1,0 +1,25 @@
+#headrow{
+     background-color:rgba(150,150,150,1);
+     height:18vh;
+}
+#Biggest_header{
+     background-color:rgba(100,100,100,0);
+}
+.sticky{
+  position:fixed;
+  top:0;
+  width:inherit;
+  z-index:1000000;
+  /*background-color:rgba(255,255,255,0.7);*/
+  /*color:#000000;*/
+  /*height: inherit;*/
+}
+.nsticky{
+  position:relative;
+  top:0;
+  width:inherit;
+  z-index:1000000;
+  /*background-color:rgba(255,255,255,0.7);*/
+  /*color:#000000;*/
+  /*height: inherit;*/
+}
