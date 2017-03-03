@@ -49,7 +49,7 @@
         </script>
     </head>
     <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base" data-gr-c-s-loaded="true">
-      <div class="mdl-layout__container has-scrolling-header">
+      <div class="mdl-layout__container">
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-tabs is-upgraded" data-upgraded=",MaterialLayout">
                 <!-- Always shows a header, even in smaller screens. -->
           <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -87,7 +87,7 @@
                   </a>
                   <a class="mdl-navigation__link" href="/contact.php">
                       <button id="up-CU-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
-                          Contect Us
+                          Contact Us
                       </button>
                       <div class="mdl-tooltip" data-mdl-for="up-CU-but">
                           Our member's email here.
@@ -99,25 +99,17 @@
             <div class="mdl-layout__drawer">
               <span class="mdl-layout-title toJump">Voyager</span>
               <nav class="mdl-navigation" style="font-weight:bold">
-                  <a class="mdl-navigation__link" href="/blog">
-                      <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
-                          Blog
-                      </button>
+                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/blog">
+                      Blog
                   </a>
-                  <a class="mdl-navigation__link" href="/aboutUs.php">
-                      <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
-                          About Us
-                      </button>
+                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/aboutUs.php">
+                      About Us
                   </a>
-                  <a class="mdl-navigation__link" href="/members.php">
-                      <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
-                          Members
-                      </button>
+                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/members.php">
+                      Members
                   </a>
-                  <a class="mdl-navigation__link" href="/contact.php">
-                      <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
-                          Contact Us
-                      </button>
+                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/contact.php">
+                      Contact Us
                   </a>
               </nav>
             </div>

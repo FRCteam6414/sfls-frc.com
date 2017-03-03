@@ -58,9 +58,10 @@
                 font-size:1.1em;
             }
             .mdl-grid{
-                margin-left:10vw;margin-right:10vw;
+                margin-left:auto;margin-right:auto;
                 position:relative;
                 top:-2vh;
+                max-width:1000px;
             }
             .toJump{
                 cursor:pointer;
@@ -154,22 +155,22 @@
             <span class="mdl-layout-title toJump">Voyager</span>
             <nav class="mdl-navigation" style="font-weight:bold">
                 <a class="mdl-navigation__link" href="/blog">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
+                    <button class="mdl-button mdl-js-button cos_drawer">
                         Blog
                     </button>
                 </a>
                 <a class="mdl-navigation__link" href="/aboutUs.php">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
+                    <button class="mdl-button mdl-js-button cos_drawer">
                         About Us
                     </button>
                 </a>
                 <a class="mdl-navigation__link" href="/members.php">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
+                    <button class="mdl-button mdl-js-button cos_drawer">
                         Members
                     </button>
                 </a>
                 <a class="mdl-navigation__link" href="/contact.php">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect cos_drawer">
+                    <button class="mdl-button mdl-js-button cos_drawer">
                         Contact Us
                     </button>
                 </a>
@@ -181,7 +182,7 @@
             <div class="section fp-section fp-table" style="background: url(/images/1.jpg) 50%;">
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--7-col">
-                        <h1 style="font-size:8em;padding-top:15%;font-family:sofia_prolight">
+                        <h1 style="font-size:7em;padding-top:20%;font-family:sofia_prolight">
                             V o y a g e r
                         </h1>
                         <h1 style="font-size:2em">
@@ -668,7 +669,7 @@
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--6-col">
                         <div id="warpper3" style="left:4vw;position:relative">
-                            <p style="color:#ddd;font-size:10em;line-height:1em">
+                            <p style="color:#ddd;font-size:10em;line-height:1em;vertical-align:middle">
                                 Stay
                                 <br>
                                 young,
@@ -679,20 +680,21 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--1-col">
-                        <svg width="580" height="400" xmlns="http://www.w3.org/2000/svg" style="top:8vh;position:relative">
+                    <div class="mdl-cell mdl-cell--1-col" style="vertical-align:middle">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="top:10vh;position:relative;height:60vh">
                             <defs>
                                 <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
                                     <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
                                 </filter>
                             </defs>
                             <g>
-                                <line style="z-index:10" filter="url(#svg_1_blur)" opacity="0.5" stroke="#fff" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="45vh" x2="0" y1="-10.5" x1="0.5" stroke-width="1.5" fill="none"></line>
+                                <line style="z-index:10" filter="url(#svg_1_blur)" opacity="0.5" stroke="#fff" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" 
+                                y2="200%" x2="0" y1="0.5" x1="0.5" stroke-width="1.5" fill="none"></line>
                             </g>
                         </svg>
                     </div>
-                    <div class="mdl-cell mdl-cell--5-col">
-                        <p style="color:#ddd;font-size:3em;Line-height:1em;position:relative;top:5vh">
+                    <div class="mdl-cell mdl-cell--5-col" style="padding-top:10vh;padding-bottom:10vh">
+                        <p style="color:#ddd;font-size:2.5em;Line-height:1em;position:relative">
                              Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation.aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor
                         </p>
                     </div>
