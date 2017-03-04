@@ -25,7 +25,8 @@
           || strpos($agent,"Android")
           || strpos($agent,"Windows CE") 
           || strpos($agent,"SymbianOS")){
-            header("Location:https://sfls-frc.com/blog");
+            // header("Location:https://sfls-frc.com/blog");
+            echo "<style> .cos_header{visibility: hidden;}</style>"  ;
           }
         ?>
         <style type="text/css">
@@ -61,14 +62,6 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation cos_header" style="font-weight:bold">
-                  <a class="mdl-navigation__link" href="/blog">
-                      <button id="up-blog-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
-                          Blog
-                      </button>
-                      <div class="mdl-tooltip" data-mdl-for="up-blog-but">
-                          visit out blog and keep an eye on our new events!
-                      </div>
-                  </a>
                   <a class="mdl-navigation__link" href="/aboutUs.php">
                       <button id="up-AU-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
                           About Us
@@ -93,15 +86,20 @@
                           Our member's email here.
                       </div>
                   </a>
+                  <a class="mdl-navigation__link" href="/blog">
+                      <button id="up-blog-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
+                          Blog
+                      </button>
+                      <div class="mdl-tooltip" data-mdl-for="up-blog-but">
+                          visit out blog and keep an eye on our new events!
+                      </div>
+                  </a>
                 </nav>
               </div>
             </header>
             <div class="mdl-layout__drawer">
               <span class="mdl-layout-title toJump">Voyager</span>
               <nav class="mdl-navigation" style="font-weight:bold">
-                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/blog">
-                      Blog
-                  </a>
                   <a class="mdl-navigation__link mdl-js-ripple-effect" href="/aboutUs.php">
                       About Us
                   </a>
@@ -110,6 +108,9 @@
                   </a>
                   <a class="mdl-navigation__link mdl-js-ripple-effect" href="/contact.php">
                       Contact Us
+                  </a>
+                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/blog">
+                      Blog
                   </a>
               </nav>
             </div>

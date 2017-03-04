@@ -27,7 +27,7 @@
           || strpos($agent,"Android")
           || strpos($agent,"Windows CE") 
           || strpos($agent,"SymbianOS")){
-            header("Location:https://sfls-frc.com/blog");
+            header("Location:https://sfls-frc.com/aboutUs.php");
           }
         ?>
         <style type="text/css">
@@ -57,7 +57,7 @@
                 text-transform:none;
                 font-size:1.1em;
             }
-            .mdl-grid{
+            #main-page-grid{
                 margin-left:auto;margin-right:auto;
                 position:relative;
                 top:-2vh;
@@ -78,7 +78,7 @@
                         	$('#bg').animate({top: '0'}, 950, "easeOutCubic");
             		    }
             		    if(index==2){
-            		       	$('#bg').animate({top: nextIndex==1? '100vh' : '-100vh' }, 950, "easeOutCubic");
+            		       	$('#bg').animate({top: nextIndex==1? '100vh' : '-100vh' }, 950, "easeInCubic");
             		    }
             		    if(index==1){
             		        $('.cos_header').css('color','#fff')
@@ -98,8 +98,8 @@
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="width:100vw;height:40vh;position:fixed">
             <defs>
                 <clippath id="clippath"> 
-                    <rect x="0" y="0" width="100vw" height="25vh" />
-                    <rect x="0" y="55vh" width="100vw" height="45vh" />
+                    <rect x="0" y="0" width="100vw" height="20vh" />
+                    <rect x="0" y="70vh" width="100vw" height="30vh" />
                 </clippath>
             </defs>
         </svg>
@@ -116,14 +116,6 @@
               <div class="mdl-layout-spacer"></div>
               <!-- Navigation -->
               <nav class="mdl-navigation cos_header" style="font-weight:bold">
-                <a class="mdl-navigation__link" href="/blog">
-                    <button id="up-blog-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
-                        Blog
-                    </button>
-                    <div class="mdl-tooltip" data-mdl-for="up-blog-but">
-                        visit out blog and keep an eye on our new events!
-                    </div>
-                </a>
                 <a class="mdl-navigation__link" href="/aboutUs.php">
                     <button id="up-AU-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
                         About Us
@@ -148,17 +140,20 @@
                         Our member's email here.
                     </div>
                 </a>
+                <a class="mdl-navigation__link" href="/blog">
+                    <button id="up-blog-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
+                        Blog
+                    </button>
+                    <div class="mdl-tooltip" data-mdl-for="up-blog-but">
+                        visit out blog and keep an eye on our new events!
+                    </div>
+                </a>
               </nav>
             </div>
           </header>
           <div class="mdl-layout__drawer">
             <span class="mdl-layout-title toJump">Voyager</span>
             <nav class="mdl-navigation" style="font-weight:bold">
-                <a class="mdl-navigation__link" href="/blog">
-                    <button class="mdl-button mdl-js-button cos_drawer">
-                        Blog
-                    </button>
-                </a>
                 <a class="mdl-navigation__link" href="/aboutUs.php">
                     <button class="mdl-button mdl-js-button cos_drawer">
                         About Us
@@ -174,15 +169,20 @@
                         Contact Us
                     </button>
                 </a>
+                <a class="mdl-navigation__link" href="/blog">
+                    <button class="mdl-button mdl-js-button cos_drawer">
+                        Blog
+                    </button>
+                </a>
             </nav>
           </div>
         </div>
-        <img src="/images/lzx.png" id="bg" style="z-index:-10000;position:fixed;height:100vh;top:100vh"></img>
+        <img src="/images/bg.jpg" id="bg" style="z-index:-10000;position:fixed;width:100vw;top:100vh"></img>
         <div id="warpper">
             <div class="section fp-section fp-table" style="background: url(/images/1.jpg) 50%;">
-                <div class="mdl-grid">
+                <div class="mdl-grid" id="main-page-grid">
                     <div class="mdl-cell mdl-cell--7-col">
-                        <h1 style="font-size:7em;padding-top:20%;font-family:sofia_prolight">
+                        <h1 style="font-size:7em;padding-top:15%;font-family:sofia_prolight;font-weight:550">
                             V o y a g e r
                         </h1>
                         <h1 style="font-size:2em">
@@ -655,14 +655,12 @@
                 </div>
             </div>
             <div class="section fp-section fp-table" style="clip-path: url(#clippath)">
-                <h1 style="font-size:3em;position:relative;top:-34vh;color:#DDD;text-align: center;">
-                    Stay young, stay naïve.
+                <h1 style="font-size:3em;position:relative;top:-27vh;color:#DDD;text-align: center;">
+                     We’ve walked years to reach here.
                 </h1>
-                <p style="font-size:2em;color:#ddd;text-align:center;top:20vh;position:relative">
-                     Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation.
-                    <br>
-                    <br>
-                    Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur. 
+                <p style="font-size:2em;color:#ddd;text-align:center;top:20vh;position:relative;line-height:2em">
+                    <br> SFLS Robotic Club and SFLS Association for Science and Exploring formed two different FTC team 1262 & 1263, winning tons of prizes.
+                    <br>Now, they are ready for the future.
                 </p>
             </div>
             <div class="section fp-section fp-table">
@@ -672,16 +670,16 @@
                             <p style="color:#ddd;font-size:10em;line-height:1em;vertical-align:middle">
                                 Stay
                                 <br>
-                                young,
+                                Inspired,
                                 <br>
-                                Stay
+                                beyond
                                 <br>
-                                naïve.
+                                ourselves.
                             </p>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--1-col" style="vertical-align:middle">
-                        <svg xmlns="http://www.w3.org/2000/svg" style="top:10vh;position:relative;height:60vh">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="top:10vh;position:relative;height:60vh;left:2vw">
                             <defs>
                                 <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
                                     <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
@@ -689,20 +687,20 @@
                             </defs>
                             <g>
                                 <line style="z-index:10" filter="url(#svg_1_blur)" opacity="0.5" stroke="#fff" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" 
-                                y2="200%" x2="0" y1="0.5" x1="0.5" stroke-width="1.5" fill="none"></line>
+                                y2="40vh" x2="0" y1="0.5" x1="0.5" stroke-width="1.5" fill="none"></line>
                             </g>
                         </svg>
                     </div>
                     <div class="mdl-cell mdl-cell--5-col" style="padding-top:10vh;padding-bottom:10vh">
-                        <p style="color:#ddd;font-size:2.5em;Line-height:1em;position:relative">
-                             Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation.aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor
+                        <p style="color:#ddd;font-size:3em;Line-height:1.15em;position:relative">
+                             VOYAGER Robotic Team was founded as a formal and independent robotic team specializing in the series competition of FIRST. By learning from the experience of competing and managing in FEIYUE and WVROX, it is growing up quickly and lively.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="section fp-section fp-table"> 
                 <h1 style="font-size:10em;position:relative;color:#DDD;text-align: center;">
-                    Stay young, stay naïve.
+                    We are proudly the VOYAGER.
                 </h1>
                 <a href="/aboutUs.php">
                     <button class="mdl-button mdl-js-button mdl-js-ripple-effect" style="position:relative;left:35vw;width:30vw;top:5vh;font-size:3em;height:8vh;color:#fff">
