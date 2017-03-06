@@ -34,7 +34,7 @@
         "@formatter": "gofmt -w \"$file\""
     },
     "javascript": {
-        "@formatOnSave": "false",
+        "@formatOnSave": true,
         "@formatter": "esformatter -i \"$file\"",
         "@use_jsbeautify": "true"
     },
@@ -60,10 +60,12 @@
     },
     "php": {
         "@completion": true,
+        "@formatOnSave": false,
         "@path": ".:./vendor"
     },
     "python": {
         "@completion": true,
+        "@formatOnSave": true,
         "@path": "/usr/local/lib/python2.7/dist-packages:/usr/local/lib/python3.4/dist-packages:/usr/local/lib/python3.5/dist-packages",
         "@version": "python2"
     },

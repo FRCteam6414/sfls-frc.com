@@ -26,7 +26,7 @@
           || strpos($agent,"Windows CE") 
           || strpos($agent,"SymbianOS")){
             // header("Location:https://sfls-frc.com/blog");
-            echo "<style> .cos_header{visibility: hidden;}</style>"  ;
+            echo "<style> .cos_header{visibility: hidden;} .toHide{visibility: hidden;}</style>"  ;
           }
         ?>
         <style type="text/css">
@@ -86,6 +86,14 @@
                           Our member's email here.
                       </div>
                   </a>
+                  <a class="mdl-navigation__link" href="/sponsor.php">
+                      <button id="up-SP-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
+                          Sponsors
+                      </button>
+                      <div class="mdl-tooltip" data-mdl-for="up-SP-but">
+                          Many thank to you guys!
+                      </div>
+                  </a>
                   <a class="mdl-navigation__link" href="/blog">
                       <button id="up-blog-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
                           Blog
@@ -100,16 +108,19 @@
             <div class="mdl-layout__drawer">
               <span class="mdl-layout-title toJump">Voyager</span>
               <nav class="mdl-navigation" style="font-weight:bold">
-                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/aboutUs.php">
+                  <a class="mdl-navigation__link" href="/aboutUs.php">
                       About Us
                   </a>
-                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/members.php">
+                  <a class="mdl-navigation__link" href="/members.php">
                       Members
                   </a>
-                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/contact.php">
+                  <a class="mdl-navigation__link" href="/contact.php">
                       Contact Us
                   </a>
-                  <a class="mdl-navigation__link mdl-js-ripple-effect" href="/blog">
+                  <a class="mdl-navigation__link" href="/sponser.php">
+                      Sponsors
+                  </a>
+                  <a class="mdl-navigation__link" href="/blog">
                       Blog
                   </a>
               </nav>

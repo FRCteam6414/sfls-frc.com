@@ -134,10 +134,18 @@
                 </a>
                 <a class="mdl-navigation__link" href="/contact.php">
                     <button id="up-CU-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
-                        Contect Us
+                        Contact Us
                     </button>
                     <div class="mdl-tooltip" data-mdl-for="up-CU-but">
                         Our member's email here.
+                    </div>
+                </a>
+                <a class="mdl-navigation__link" href="/sponsor.php">
+                    <button id="up-SP-but" class="mdl-button mdl-js-button mdl-js-ripple-effect cos_header">
+                        Sponsors
+                    </button>
+                    <div class="mdl-tooltip" data-mdl-for="up-SP-but">
+                        Many thank to you guys!
                     </div>
                 </a>
                 <a class="mdl-navigation__link" href="/blog">
@@ -155,24 +163,19 @@
             <span class="mdl-layout-title toJump">Voyager</span>
             <nav class="mdl-navigation" style="font-weight:bold">
                 <a class="mdl-navigation__link" href="/aboutUs.php">
-                    <button class="mdl-button mdl-js-button cos_drawer">
-                        About Us
-                    </button>
+                    About Us
                 </a>
                 <a class="mdl-navigation__link" href="/members.php">
-                    <button class="mdl-button mdl-js-button cos_drawer">
-                        Members
-                    </button>
+                    Members
                 </a>
                 <a class="mdl-navigation__link" href="/contact.php">
-                    <button class="mdl-button mdl-js-button cos_drawer">
-                        Contact Us
-                    </button>
+                    Contact Us
                 </a>
+                  <a class="mdl-navigation__link" href="/sponser.php">
+                    Sponsors
+                  </a>
                 <a class="mdl-navigation__link" href="/blog">
-                    <button class="mdl-button mdl-js-button cos_drawer">
-                        Blog
-                    </button>
+                    Blog
                 </a>
             </nav>
           </div>

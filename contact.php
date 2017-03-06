@@ -40,7 +40,7 @@
                         )
                     );
                 
-                for($i=0;$i<2;$i++){
+                for($i=0;$i<sizeof($info);$i++){
                     printInfo($info[$i]);
                 }
             ?>
