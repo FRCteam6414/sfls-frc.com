@@ -657,11 +657,11 @@
                     </div>
                 </div>
             </div>
-            <div class="section fp-section fp-table" style="clip-path: url(#clippath)">
-                <h1 style="font-size:3em;position:relative;top:-27vh;color:#DDD;text-align: center;">
+            <div class="section fp-section fp-table" style="position:relative;clip-path: url(#clippath)">
+                <h1 style="font-size:3em;position:absolute;top:5vh;width:100vw;color:#DDD;text-align: center;">
                      We’ve walked years to reach here.
                 </h1>
-                <p style="font-size:2em;color:#ddd;text-align:center;top:20vh;position:relative;line-height:2em">
+                <p style="font-size:2em;color:#ddd;text-align:center;top:30vh;position:relative;line-height:2em">
                     <br> SFLS Robotic Club and SFLS Association for Science and Exploring formed two different FTC team 1262 & 1263, winning tons of prizes.
                     <br>Now, they are ready for the future.
                 </p>

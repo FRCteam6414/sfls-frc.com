@@ -174,6 +174,10 @@
             .mdl-demo .mdl-menu__container {
               z-index: 99;
             }
+            .member{
+               margin-top:5vh;
+               margin-bottom:5vh;
+            }
         </style>
         <div class="mdl-layout__tab-panel is-active" id="overview">
           
@@ -181,30 +185,33 @@
             $intro=array(
               array("YiYao Guo"     ,"Stacey"   ,"Captain"),
               array("HengYu Cao"    ,"Scott"    ,"Design leader"),
-              array("WeiJia Fang"   ,"UNKNOWN"  ,"Design member"),
               array("JunQing He"    ,"UNKNOWN"  ,"Design member"),
-              array("LuZhang Shi"   ,"UNKNOWN"  ,"Design member"),
+              array("LuZhang Shi"   ,"Lucy"     ,"Design member"),
               array("HuiDan Zheng"  ,"UNKNOWN"  ,"Design member"),
-              array("JingHai Lin"   ,"UNKNOWN"  ,"Mechanical leader"),
-              array("RuFei Li"      ,"UNKNOWN"  ,"Mechanical member"),
-              array("JiaHao Wei"    ,"UNKNOWN"  ,"Mechanical member"),
-              array("You Wu"        ,"UNKNOWN"  ,"Mechanical member"),
+              array("JingHai Lin"   ,"Mick"  ,"Mechanical leader"),
+              array("RuFei Li"      ,"Blake"  ,"Mechanical member"),
+              array("JiaHao Wei"    ,"Henry"    ,"Mechanical member"),
+              array("You Wu"        ,"George"  ,"Mechanical member"),
               array("LingZhi Zhang" ,"UNKNOWN"  ,"Mechanical member"),
               array("ZhiYi Wei"     ,"Eric"     ,"Electronic Leader"),
               array("XueFei Chen"   ,"UNKNOWN"  ,"Electronic member"),
-              array("MengNing Wu"   ,"UNKNOWN"  ,"Programming member")
+              array("GengZhi Li"    ,"Wilson"   ,"Programming leader"),
+              array("MengNing Wu"   ,"Rebecca"  ,"Programming member"),
+              array("KeYue Zhang"   ,"Tio"      ,"Programming member"),
+              array("WeiJia Fang"   ,"UNKNOWN"  ,"Programming member"),
+              array("YiXuan Wu"     ,"Florence" ,"Business manager")
               );
               
               for($i=0;$i<sizeof($intro);$i++){
                 $flatName=substr(strtolower(strstr($intro[$i][0],' ',false).strstr($intro[$i][0],' ',true)),1);
                 // echo $flatName;
-                $output= "<section class=\"section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp\" style=\"margin-top:5vh\">\r\n"
+                $output= "<section class=\"section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp member\">\r\n"
                         ."  <header class=\"section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white\">"
                         ."    <img src=\"/images/intro/".$flatName.".png\" style=\"width:500px\"></img>"
                         ."  </header>"
                         ."  <div class=\"mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone\">"
                         ."    <div class=\"mdl-card__supporting-text\">"
-                        ."      <h4>".$intro[$i][0].", aka ".$intro[$i][1]."</h4>"
+                        ."      <h4>".$intro[$i][0]."<small>  aka ".($intro[$i][1]=="UNKNOWN"?("???<div style=\"color:#ff0000\">Plz tell Wilson your English name!</div>"):$intro[$i][1])."</small></h4>"
                         .       file_get_contents("/etc/project/images/intro/".$flatName.".txt")
                         ."    </div>"
                         ."    <div class=\"mdl-card__actions\">"

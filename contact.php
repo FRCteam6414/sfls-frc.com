@@ -14,7 +14,7 @@
                     for($i=0;$i<sizeof($inpArray)-1;$i++){
                         $output="<div class= \"warp\" style=\"margin-top:5vh;\">".
                             "<h5>"          .$inpArray[$i][0]."</h5>".
-                            "<p>AKA: "      .($inpArray[$i][1]=="UNKNOWN"?"<div style=\"color:#f00\">Plz tell Wilson WHAT YOUR ENGLISH NAME IS!</div>":$inpArray[$i][1])."</p>".
+                            "<p>AKA: "      .($inpArray[$i][1]=="UNKNOWN"?"???<div style=\"color:#f00\">Plz tell Wilson WHAT YOUR ENGLISH NAME IS!</div>":$inpArray[$i][1])."</p>".
                             "<p>Position: " .$inpArray[$i][2]."</p>".
                             "<p>Email: "    .$inpArray[$i][3]."</p>".
                             "</div>";
