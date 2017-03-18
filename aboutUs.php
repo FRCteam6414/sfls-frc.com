@@ -18,7 +18,21 @@
             <p>
                 We are Voyager #6414, the Shenzhen Foreign Languages School FIRST Robotics team. Our goal is to inspire young people to fully appreciate the robotic world and dream of becoming the science and technology leaders in the pursuit of STEM. We also strive to contribute the understanding of teamwork and “Gracious Professionalism”, as well as helping students,  develop interests for their future. We are intent to inspire these Non-SFLS students to experience this impressive challenging process and encourage them to found their own school’s FRC team in the future by spreading the FIRST message to promote the students who learn the robotics and STEM in general.
             </p>
-            
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--9-col"></div>
+                <div class="mdl-cell mdl-cell--3-col">
+                    <div id="doc-warpper" style="position:relative">
+                      <button id="doc-button" class="mdl-button mdl-js-button mdl-js-ripple-effect" style="color:rgb(158, 158, 158);font-weight: 500;text-transform:none;font-size:13px">
+                        More documentation
+                      </button>
+                      <ul class="mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect" data-mdl-for="doc-button">
+                        <a style="text-decoration:none" href="/bp.docx"><li class="mdl-menu__item"> Business plan </li></a>
+                        <a style="text-decoration:none" href="/en.docx"><li class="mdl-menu__item"> Engineering notebook </li></a>
+                        <a style="text-decoration:none" href="/brochure.docx"><li class="mdl-menu__item"> Brochure </li></a>
+                      </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <?php include 'sFooter.html' ?>
